@@ -14,6 +14,7 @@ class api():
       address = data["results"][0]
       print(address["address1"] + address["address2"] + address["address3"])
 
+  #天気予報関数
   def weather(self):
     # 270000.jsonは大阪の都道府県コード
     url = "https://www.jma.go.jp/bosai/forecast/data/overview_forecast/270000.json"
