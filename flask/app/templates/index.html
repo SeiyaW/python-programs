@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{name}}</title>
 </head>
 <body>
-    <h1>webアプリ初心者のFlask</h1>
+    {% if name == "seiya" %}
+        <h1>{{name}}のFlask</h1>
+    {% elif name %}
+        <h1>{{name}}</h1>
+    {% else %}
+        <h1>flask</h1>
+    {% endif %}
+    <img src="/static/images/icon1.png" alt="画像">
 </body>
 </html>
